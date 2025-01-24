@@ -1,0 +1,56 @@
+/* src/components/Task.css */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e0e0;
+    padding: 15px 20px;
+    border-radius: 30px;
+    margin: 10px 0;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .task:hover {
+    box-shadow: 3px 3px 8px #bebebe, -3px -3px 8px #ffffff;
+  }
+  
+  .task.completed {
+    background: linear-gradient(145deg, #d4f7d4, #eaffea);
+  }
+  
+  .task.completed .task-text {
+    text-decoration: line-through;
+    color: #7f8c8d;
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #4a4a4a;
+  }
+  
+  .task-icons .icon {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: color 0.2s ease;
+  }
+  
+  .complete-icon {
+    color: #27ae60;
+  }
+  
+  .complete-icon:hover {
+    color: #2ecc71;
+  }
+  
+  .delete-icon {
+    color: #e74c3c;
+  }
+  
+  .delete-icon:hover {
+    color: #ff6f61;
+  }
+  

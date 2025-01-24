@@ -1,0 +1,73 @@
+/* src/components/TaskList.css */
+.task-list {
+    max-width: 400px;
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 9px 9px 16px #bebebe, -9px -9px 16px #ffffff;
+    text-align: center;
+  }
+  
+  .task-list h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+  }
+  
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+    background: #e0e0e0;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .task-input input:focus {
+    box-shadow: inset 3px 3px 5px #bebebe, inset -3px -3px 5px #ffffff;
+  }
+  
+  .task-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .task-input button:hover {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  }
+  
+  .clear-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #ffcccc, #ffe6e6);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    font-size: 1rem;
+    color: #ff4d4d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .clear-btn:hover {
+    background: linear-gradient(145deg, #ffe6e6, #ffffff);
+  }
+  

@@ -1,0 +1,19 @@
+/* src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(145deg, #d4d4f7, #eaeaff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
