@@ -1,11 +1,12 @@
 // src/components/TaskList.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Task from "./Task";
 import "./TaskList.css";
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
+  const [titulo, setTitulo] = useState('');
 
   const addTask = () => {
     if (newTask.trim() === "") return;
@@ -35,9 +36,14 @@ const TaskList = () => {
     setTasks([]);
   };
 
+  useEffect(()=> {
+    document.title = titulo || 'Demo Karla';
+  }, [titulo]);
+
   return (
     <div className="task-list">
       <h1>To-Do List</h1>
+      <input type="text" placeholder="Escribe titulo pagina" value={titulo} onChange={(e) => setTitulo(e.target.value)}/>
       <div className="task-input">
         <input
           type="text"
