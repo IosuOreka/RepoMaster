@@ -1,0 +1,49 @@
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+  
+.tarea:hover {
+    transform: scale(1.02);
+}
+  
+.eliminar {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+  
+.eliminar:hover {
+    color: darkred;
+}
+  
